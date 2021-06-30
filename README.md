@@ -1,6 +1,6 @@
 # PotatoDetector using YoloV3
 
-<img src="https://github.com/thehummingbird/PotatoDetectorYolo/blob/main/images/out.JPG">
+<img src="https://github.com/thehummingbird/PotatoDetectorYolo/blob/main/images_for_githubReadme/out.JPG">
 
 **The project is divided into three parts**
 

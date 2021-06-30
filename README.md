@@ -10,6 +10,8 @@
 
 * Inference
 
+**NOTE - If you wish to directly look at the results of this project, open out.mp4**
+
 **1. Creating a custom dataset for potato detection:**
 
 I used a training video and extracted frames at regular intervals. Then, I use the annotation tool "labelimg" for creating a training dataset for YOLO. 

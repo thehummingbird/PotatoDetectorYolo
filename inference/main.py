@@ -25,7 +25,6 @@ def main():
             break
     cv2.destroyAllWindows()
     print("Inference stopped at the end of the video")
-
    
 if __name__ == '__main__':
     main()

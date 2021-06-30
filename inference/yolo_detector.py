@@ -13,6 +13,7 @@ class YoloDetector:
         self.colors = np.array([[255.,0.,0.]]) #red colour for bounding boxes
         self.classes = classes
         
+    # img : input image for inference    
     def detect(self,img):
         img = img.copy()
         height, width, channels = img.shape
@@ -34,7 +35,6 @@ class YoloDetector:
                 confidence = scores[class_id]
                 if confidence > 0.3:
                     # Object detected
-                    print(class_id)
                     center_x = int(detection[0] * width)
                     center_y = int(detection[1] * height)
                     w = int(detection[2] * width)
@@ -49,7 +49,7 @@ class YoloDetector:
                     class_ids.append(class_id)
 
         indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
-        print(indexes)
+        print("Number of objects: {}".format(len(indexes)))
         font = cv2.FONT_HERSHEY_PLAIN
         for i in range(len(boxes)):
             if i in indexes:
@@ -58,21 +58,5 @@ class YoloDetector:
                 color = self.colors[class_ids[i]]
                 cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
                 cv2.putText(img, label, (x - 30, y + 250), font, 3, color, 2)
-                
-        #width = int(img.shape[1])
-        #height = int(img.shape[0])
-        #dim = (width, height)
-        #resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
+
         return img
-    
-    
-
-
-
-
-
-
-#def yolo_init(weights, config):
-
-
-

@@ -1,18 +1,5 @@
 import cv2
-import numpy as np
-import glob
-import random
 from yolo_detector import YoloDetector
-
-
-
-# Name custom object
-classes = ["Potato"]
-
-
-
-img_index = 0
-fps = 60
 
 def main():
     #Initialize yolo detector object for potato detection
@@ -42,5 +29,3 @@ def main():
    
 if __name__ == '__main__':
     main()
-
-

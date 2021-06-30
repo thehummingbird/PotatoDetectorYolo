@@ -1,5 +1,7 @@
 # PotatoDetector using YoloV3
 
+<img src="https://github.com/thehummingbird/PotatoDetectorYolo/blob/main/images/out.JPG">
+
 **The project is divided into three parts**
 
 * Creating a custom dataset for potato detection, 

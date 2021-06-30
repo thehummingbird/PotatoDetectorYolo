@@ -31,7 +31,7 @@ The notebook unzips the dataset and trains YoloV3 model using darknet. I trained
 The folder "inference" consists of - *main.py, yolo_detector.py, yolov3_testing.cfg, yolov3_training.weights, test.mp4, and out folder*
 
 * *main.py -* main file to run for inference
-* *yolo_detector.py -* yolov3 model which takes weights and config and has an API detect which takes frames and returns results from yolo. The model is abstracted out from main.py so that it can ideally be used for other objects as well, depening on weights and name of the classes(object) passed
+* *yolo_detector.py -* yolov3 model which takes weights and config and has an API detect which takes frames and returns results from yolo. The model is abstracted out from main.py so that it can ideally be used for other objects as well, depending on weights and name of the classes(object) passed
 * *yolov3_testing.cfg -* config file for the model
 * *yolov3_training.weights -* weights obtained from training on colab
 * *test.mp4 -* Video used for inference

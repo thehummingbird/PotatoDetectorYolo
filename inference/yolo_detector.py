@@ -10,7 +10,7 @@ class YoloDetector:
         self.net = cv2.dnn.readNet(weights, config)
         self.layer_names = self.net.getLayerNames()
         self.output_layers = [self.layer_names[i[0] - 1] for i in self.net.getUnconnectedOutLayers()]
-        self.colors = np.array([[255.,0.,0.]]) #red colour for bounding boxes
+        self.colors = np.array([[255.,0.,0.]]) #blue colour for bounding boxes
         self.classes = classes
         
     # img : input image for inference    
